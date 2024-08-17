@@ -1,30 +1,21 @@
-import dishImage from "../../images/dish.jpg";
-
 export const loadHomePage = () => {
   const content = document.querySelector("#content");
-  
-  const heading = document.createElement("h1");
-  heading.textContent = "Welcome to The Saffron Spoon";
-  heading.style.textAlign = "center";
 
-  const img = document.createElement("img");
-  img.src = dishImage;
-  img.style.width = "100%";
-  img.style.maxWidth = "90vw";
-  img.style.height = "500px";
-  img.style.display = "block";
-  img.style.marginLeft = "auto";
-  img.style.marginRight = "auto";
+  // Container for all the elements of home page
+  const homeContainer = document.createElement("div");
+  homeContainer.classList.add("home-container");
 
-  const para = document.createElement("p");
-  para.textContent =
-    "At The Saffron Spoon, we bring you an exquisite blend of flavors from around the world, crafted with passion and served with love. Come and indulge in a dining experience like no other.";
-  para.style.textAlign = "center";
-  para.style.fontSize = "20px";
+  // div for creating the heading
+  const heading = document.createElement("div");
+  heading.innerHTML = `<h1>Welcome to <em>The Saffron Spoon</em></h1>`;
 
-  content.append(heading);
-  content.append(img);
-  content.append(para);
+  // div for creating the para
+  const para = document.createElement("div");
+  para.innerHTML = `<p>At <em>The Saffron Spoon</em>, we bring you an exquisite blend of flavors from around the world, crafted with passion and served with love. Come and indulge in a dining experience like no other.</p>`;
+
+  homeContainer.append(heading);
+  homeContainer.append(para);
+
+  // Appending the container to the div#content
+  content.append(homeContainer);
 };
-
-
