@@ -54,7 +54,8 @@ button {
 
 .home-container h1,
 .menu-container h1,
-.about-container h1 {
+.about-container h1,
+.contact-container h1 {
   font-family: "Matemasie", sans-serif;
   font-size: 48px;
   text-align: center;
@@ -77,7 +78,8 @@ button {
 
 /* menu section */
 .menu-container,
-.about-container {
+.about-container,
+.contact-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,7 +92,8 @@ button {
 }
 
 .menu-container h1,
-.about-container h1 {
+.about-container h1,
+.contact-container h1 {
   color: #000;
   padding: 25px 10px;
 }
@@ -123,7 +126,8 @@ button {
   margin: 0 auto;
 }
 
-.about-container p {
+.about-container p,
+.contact-container p {
   font-size: 20px;
   font-family: sans-serif;
   line-height: 1.5;
@@ -131,3 +135,20 @@ button {
   word-break: break-all;
   padding: 15px;
 }
+
+/* contact section */
+.contact-container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.contact-container h4 {
+  font-family: "Matemasie", sans-serif;
+  font-size: 20px; 
+  letter-spacing: 3px;
+}
+
+.contact-container a {
+  color: #b10b0b;
+}
+
