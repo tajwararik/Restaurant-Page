@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Matemasie&display=swap");
 
 * {
   padding: 0;
@@ -52,7 +52,9 @@ button {
   position: relative;
 }
 
-.home-container h1, .menu-container h1 {
+.home-container h1,
+.menu-container h1,
+.about-container h1 {
   font-family: "Matemasie", sans-serif;
   font-size: 48px;
   text-align: center;
@@ -74,7 +76,8 @@ button {
 }
 
 /* menu section */
-.menu-container {
+.menu-container,
+.about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +89,8 @@ button {
   max-width: 750px;
 }
 
-.menu-container h1 {
+.menu-container h1,
+.about-container h1 {
   color: #000;
   padding: 25px 10px;
 }
@@ -111,4 +115,19 @@ button {
   font-family: sans-serif;
   font-size: 20px;
   padding: 15px 10px;
+}
+
+/* about section */
+.about-container {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.about-container p {
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 15px;
 }
