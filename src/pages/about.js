@@ -1,12 +1,15 @@
 export const loadAboutPage = () => {
   const content = document.querySelector("#content");
 
+  // Container for all the elements of about page
   const aboutContainer = document.createElement("div");
   aboutContainer.classList.add("about-container");
 
+  // div for creating the heading
   const heading = document.createElement("div");
   heading.innerHTML = `<h1>About</h1>`;
 
+  // div for creating the paragraph item
   const para = document.createElement("div");
   para.innerHTML = `<p>Welcome to <em><strong>The Saffron Spoon,</strong></em> where culinary artistry meets the rich traditions of global cuisine. Nestled in the heart of the city, our restaurant is a haven for food enthusiasts seeking a dining experience that transcends the ordinary.</p>
 
@@ -21,5 +24,6 @@ export const loadAboutPage = () => {
   aboutContainer.append(heading);
   aboutContainer.append(para);
 
+  // Appending the container to the div#content
   content.append(aboutContainer);
 };
